@@ -19,6 +19,8 @@ export default class BrowserDetector extends LightningElement {
     this.browserVersion = M[1];
     if (this.browser != "Chrome") {
       alert("Please use either Google Chrome or Microsoft Edge web browsers for full Salesforce functionality");
+    } else {
+      console.log("Browser: " + this.browser + "\n" + "Version: " + this.browserVersion);
     }
   }
 }
